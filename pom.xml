@@ -45,7 +45,7 @@
 			                  <artifactId>servicerequest-sys-api</artifactId>
 			                  <version>1.0.0</version>
 			                  <type>zip</type>
-			                  <classifier>fat-raml</classifier>
+			                  <classifier>raml</classifier>
 			                  <overWrite>true</overWrite>
 			                  <outputDirectory>src/main/api/</outputDirectory>
 			                  <includes>**/*</includes>
