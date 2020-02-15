@@ -45,7 +45,7 @@
 			                  <artifactId>servicerequest-sys-api</artifactId>
 			                  <version>1.0.0</version>
 			                  <type>zip</type>
-			                  <classifier>raml</classifier>
+			                  <classifier>raml-fragment</classifier>
 			                  <overWrite>true</overWrite>
 			                  <outputDirectory>src/main/api/</outputDirectory>
 			                  <includes>**/*</includes>
