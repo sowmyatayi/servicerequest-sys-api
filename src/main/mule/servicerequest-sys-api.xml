@@ -133,7 +133,7 @@ output application/json
 ---
 {
 	Status_Code: "0",
-	ServiceRequests_JSON_Text: "tst"
+	ServiceRequests_JSON_Text: "test"
 }]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
