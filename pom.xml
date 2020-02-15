@@ -56,11 +56,7 @@
             <classifier>raml</classifier>
             <type>zip</type>
         </dependency>
-        <dependency>
-	      <groupId>5fe8096b-b5d7-4ef2-ac8f-caba6721adfe</groupId>
-	      <artifactId>servicerequest-sys-api</artifactId>
-	      <version>1.0.0</version>
-	    </dependency>
+        
     </dependencies>
 
 	<repositories>

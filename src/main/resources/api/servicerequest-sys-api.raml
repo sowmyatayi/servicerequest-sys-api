@@ -1,0 +1,38 @@
+#%RAML 1.0
+title: servicerequest-sys-api
+baseUri: http://localhost:7443/servicerequest/sys
+mediaType:
+  - application/json
+version: 1.0
+protocols:
+  - HTTP
+
+/request:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            type: object
+            properties:
+              Status_Code:
+                description: Number Representing the Status of the Call
+                type: number
+              ServiceRequests_JSON_Text:
+                description:  Premise Service requests in JSON Test format
+                type: string
+      400:
+        body:
+          application/json:
+            type: object
+            properties:
+              Status_Code:
+                description: Number representing the status of the call
+                type: number
+              Status_Description:
+                description: Text explanation of Status_Code
+                type: string
+              Message_Text:
+                description: Output Message
+                type: string
+
