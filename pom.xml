@@ -30,7 +30,7 @@
 			<plugin>
 			   <groupId>org.apache.maven.plugins</groupId>
 			   <artifactId>maven-dependency-plugin</artifactId>
-			   <version>1.10</version>
+			   <version>2.10</version>
 			   <executions>
 			      <execution>
 			         <id>unpack</id>
@@ -87,16 +87,22 @@
     </dependencies>
 
 	<repositories>
-          <repository>
+         <!--  <repository>
             <id>anypoint-exchange-v2</id>
             <name>Anypoint Exchange</name>
             <url>https://maven.anypoint.mulesoft.com/api/v2/maven</url>
             <layout>default</layout>
-        </repository>
+        </repository> -->
         <repository>
             <id>mulesoft-releases</id>
             <name>MuleSoft Releases Repository</name>
             <url>https://repository.mulesoft.org/releases/</url>
+            <layout>default</layout>
+        </repository>
+         <repository>
+            <id>anypoint-exchange-v1</id>
+            <name>Anypoint Exchange</name>
+            <url>https://maven.anypoint.mulesoft.com/api/v1/maven</url>
             <layout>default</layout>
         </repository>
     </repositories>
