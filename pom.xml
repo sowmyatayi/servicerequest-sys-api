@@ -32,6 +32,10 @@
 						<password>Office#01</password>
 						<applicationName>servicerequest-sys-api</applicationName>
 						<environment>Sandbox</environment>
+						<businessGroup>netro</businessGroup>
+            			<region>us-east-1</region>
+            			<workerType>MEDIUM</workerType> 
+            			<workers>2</workers>
 				  	</cloudHubDeployment>
 				</configuration>
 		        <executions>
