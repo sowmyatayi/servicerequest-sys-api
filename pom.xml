@@ -34,8 +34,8 @@
 						<environment>Sandbox</environment>
 						<businessGroup>netro</businessGroup>
             			<region>us-east-1</region>
-            			<workerType>MEDIUM</workerType> 
-            			<workers>2</workers>
+            			<workerType>SMALL</workerType> 
+            			<workers>1</workers>
 				  	</cloudHubDeployment>
 				</configuration>
 		        <executions>
