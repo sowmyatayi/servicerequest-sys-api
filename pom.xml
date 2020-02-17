@@ -63,7 +63,7 @@
 		              <artifactItems>
 		                <artifactItem>
 		                  <groupId>5fe8096b-b5d7-4ef2-ac8f-caba6721adfe</groupId>
-            			  <artifactId>servicerequest-sys-api</artifactId>
+            			  <artifactId>mule-module-servicerequest-sys-api</artifactId>
             		      <version>1.0.0</version>
 		                  <type>zip</type>
 		                  <classifier>fat-raml</classifier>
