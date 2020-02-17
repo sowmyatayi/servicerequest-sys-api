@@ -16,7 +16,14 @@
 		<app.runtime>4.2.2</app.runtime>
 		<mule.maven.plugin.version>3.3.5</mule.maven.plugin.version>
 	</properties>
-
+<distributionManagement>
+     <repository>
+      <id>exchange</id>
+      <name>Anypoint Platform Exchange Repository</name>
+      <url>https://maven.anypoint.mulesoft.com/api/v2/organizations/5fe8096b-b5d7-4ef2-ac8f-caba6721adfe/maven</url>
+      <layout>default</layout>
+    </repository>
+  </distributionManagement>
 	<build>
 		<plugins>
 			<plugin>
@@ -109,43 +116,5 @@
         </dependency>
     </dependencies>
 
-	<repositories>
-         <repository>
-      <id>exchange</id>
-      <name>Anypoint Platform Exchange Repository</name>
-      <url>https://maven.anypoint.mulesoft.com/api/v2/organizations/5fe8096b-b5d7-4ef2-ac8f-caba6721adfe/maven</url>
-      <layout>default</layout>
-    </repository>
-    <repository>
-            <id>anypoint-exchange-v2</id>
-            <name>Anypoint Exchange</name>
-            <url>https://maven.anypoint.mulesoft.com/api/v2/maven</url>
-            <layout>default</layout>
-        </repository>
-        <repository>
-            <id>mulesoft-releases</id>
-            <name>MuleSoft Releases Repository</name>
-            <url>https://repository.mulesoft.org/releases/</url>
-            <layout>default</layout>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>mulesoft-releases</id>
-            <name>mulesoft release repository</name>
-            <layout>default</layout>
-            <url>https://repository.mulesoft.org/releases/</url>
-            <snapshots>
-                <enabled>false</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
-<distributionManagement>
-     <repository>
-      <id>exchange</id>
-      <name>Anypoint Platform Exchange Repository</name>
-      <url>https://maven.anypoint.mulesoft.com/api/v2/organizations/5fe8096b-b5d7-4ef2-ac8f-caba6721adfe/maven</url>
-      <layout>default</layout>
-    </repository>
-  </distributionManagement>
+	
 </project>
