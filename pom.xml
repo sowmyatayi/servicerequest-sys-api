@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>5fe8096b-b5d7-4ef2-ac8f-caba6721adfe</groupId>
+	<groupId>com.mycompany</groupId>
 	<artifactId>servicerequest-sys-api</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>mule-application</packaging>
@@ -49,34 +49,33 @@
 		        </executions>
 			</plugin>
 			<plugin>
-		        <groupId>org.apache.maven.plugins</groupId>
-		        <artifactId>maven-dependency-plugin</artifactId>
-		        <version>3.1.1</version>
-		        <executions>
-		          <execution>
-		            <id>unpack</id>
-		            <phase>generate-sources</phase>
-		            <goals>
-		              <goal>unpack</goal>
-		            </goals>
-		            <configuration>
-		              <artifactItems>
-		                <artifactItem>
-		                  <groupId>5fe8096b-b5d7-4ef2-ac8f-caba6721adfe</groupId>
-            			  <artifactId>servicerequest-sys-api</artifactId>
-            		      <version>1.0.0</version>
-		                  <type>zip</type>
-		                  <classifier>fat-raml</classifier>
-		                  <overWrite>true</overWrite>
-		                  <outputDirectory>src/main/api/</outputDirectory>
-		                  <destFileName>**/*</destFileName>
-		                </artifactItem>
-		              </artifactItems>
-		              <!-- other configurations here -->
-		            </configuration>
-		          </execution>
-		        </executions>
-		      </plugin>
+			   <groupId>org.apache.maven.plugins</groupId>
+			   <artifactId>maven-dependency-plugin</artifactId>
+			   <version>3.1.1</version>
+			   <executions>
+			      <execution>
+			         <id>unpack</id>
+			         <phase>generate-sources</phase>
+			         <goals>
+			            <goal>unpack</goal>
+			         </goals>
+			         <configuration>
+			            <artifactItems>
+			               <artifactItem>
+			                  <groupId>5fe8096b-b5d7-4ef2-ac8f-caba6721adfe</groupId>
+            				  <artifactId>servicerequest-sys-api</artifactId>
+            				  <version>1.0.0</version>
+			                  <type>zip</type>
+			                  <classifier>fat-raml</classifier>
+			                  <overWrite>true</overWrite>
+			                  <outputDirectory>src/main/api/</outputDirectory>
+			                  <includes>**/*</includes>
+			               </artifactItem>
+			            </artifactItems>
+			         </configuration>
+			      </execution>
+			   </executions>
+			</plugin>
 		</plugins>
 	</build>
 
@@ -123,12 +122,7 @@
             <url>https://repository.mulesoft.org/releases/</url>
             <layout>default</layout>
         </repository>
-        <repository>
-	      <id>Repository</id>
-	      <name>Corporate Repository</name>
-	      <url>https://maven.anypoint.mulesoft.com/api/v1/organizations/5fe8096b-b5d7-4ef2-ac8f-caba6721adfe/maven</url>
-	      <layout>default</layout>
-	    </repository>
+        
     </repositories>
     <pluginRepositories>
         <pluginRepository>
