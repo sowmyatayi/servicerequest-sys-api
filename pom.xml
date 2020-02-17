@@ -54,10 +54,10 @@
 		        <version>3.1.1</version>
 		        <executions>
 		          <execution>
-		            <id>copy-dependencies</id>
-		            <phase>package</phase>
+		            <id>unpack</id>
+		            <phase>generate-sources</phase>
 		            <goals>
-		              <goal>copy-dependencies</goal>
+		              <goal>unpack</goal>
 		            </goals>
 		            <configuration>
 		              <artifactItems>
@@ -66,6 +66,7 @@
             			  <artifactId>servicerequest-sys-api</artifactId>
             		      <version>1.0.0</version>
 		                  <type>zip</type>
+		                  <classifier>fat-raml</classifier>
 		                  <overWrite>true</overWrite>
 		                  <outputDirectory>src/main/api/</outputDirectory>
 		                  <destFileName>**/*</destFileName>
