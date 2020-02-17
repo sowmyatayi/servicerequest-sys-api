@@ -43,7 +43,7 @@
                </execution>
             </executions>
          </plugin>
-         <plugin>
+         <!-- <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-dependency-plugin</artifactId>
             <version>3.1.1</version>
@@ -70,7 +70,7 @@
                   </configuration>
                </execution>
             </executions>
-         </plugin>
+         </plugin> -->
       </plugins>
    </build>
    <dependencies>
@@ -101,12 +101,12 @@
       </dependency>
    </dependencies>
    <repositories>
-       <repository>
+      <!--  <repository>
          <id>exchange</id>
          <name>Anypoint Platform Exchange Repository</name>
          <url>https://maven.anypoint.mulesoft.com/api/v2/organizations/5fe8096b-b5d7-4ef2-ac8f-caba6721adfe/maven</url>
          <layout>default</layout>
-      </repository>
+      </repository> -->
       <repository>
          <id>anypoint-exchange-v2</id>
          <name>Anypoint Exchange</name>
@@ -131,12 +131,12 @@
          </snapshots>
       </pluginRepository>
    </pluginRepositories>
-   <distributionManagement>
+   <!-- <distributionManagement>
       <repository>
          <id>exchange</id>
          <name>Anypoint Platform Exchange Repository</name>
          <url>https://maven.anypoint.mulesoft.com/api/v2/organizations/5fe8096b-b5d7-4ef2-ac8f-caba6721adfe/maven</url>
          <layout>default</layout>
       </repository>
-   </distributionManagement>
+   </distributionManagement> -->
 </project>
