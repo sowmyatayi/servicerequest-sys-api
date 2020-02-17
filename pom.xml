@@ -19,7 +19,7 @@
             <artifactId>mule-maven-plugin</artifactId>
             <version>${mule.maven.plugin.version}</version>
             <extensions>true</extensions>
-            <configuration>
+           <!--  <configuration>
                <cloudHubDeployment>
                   <uri>https://anypoint.mulesoft.com/</uri>
                   <muleVersion>4.2.0</muleVersion>
@@ -41,9 +41,9 @@
                      <goal>deploy</goal>
                   </goals>
                </execution>
-            </executions>
+            </executions> -->
          </plugin>
-         <!-- <plugin>
+         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-dependency-plugin</artifactId>
             <version>3.1.1</version>
@@ -70,7 +70,7 @@
                   </configuration>
                </execution>
             </executions>
-         </plugin> -->
+         </plugin>
       </plugins>
    </build>
    <dependencies>
@@ -131,6 +131,7 @@
          </snapshots>
       </pluginRepository>
    </pluginRepositories>
+   
    <!-- <distributionManagement>
       <repository>
          <id>exchange</id>
