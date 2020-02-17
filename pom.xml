@@ -31,7 +31,7 @@
 						<username>sowmyatayi_2020_01</username>
 						<password>Office#01</password>
 						<applicationName>servicerequest-sys-api</applicationName>
-						<environment>DEV</environment>
+						<environment>SANDBOX</environment>
 				  	</cloudHubDeployment>
 				</configuration>
 		        <executions>
