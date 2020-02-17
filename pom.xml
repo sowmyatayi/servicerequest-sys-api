@@ -63,7 +63,7 @@
 		              <artifactItems>
 		                <artifactItem>
 		                  <groupId>5fe8096b-b5d7-4ef2-ac8f-caba6721adfe</groupId>
-            			  <artifactId>mule-module-servicerequest-sys-api</artifactId>
+            			  <artifactId>servicerequest-sys-api</artifactId>
             		      <version>1.0.0</version>
 		                  <type>zip</type>
 		                  <classifier>fat-raml</classifier>
@@ -126,7 +126,7 @@
         <repository>
 	      <id>Repository</id>
 	      <name>Corporate Repository</name>
-	      <url>https://maven.anypoint.mulesoft.com/api/v2/organizations/5fe8096b-b5d7-4ef2-ac8f-caba6721adfe/maven</url>
+	      <url>https://maven.anypoint.mulesoft.com/api/v1/organizations/5fe8096b-b5d7-4ef2-ac8f-caba6721adfe/maven</url>
 	      <layout>default</layout>
 	    </repository>
     </repositories>
