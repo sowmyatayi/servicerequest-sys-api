@@ -3,7 +3,7 @@
     <http:listener-config name="servicerequest-sys-api-httpListenerConfig">
         <http:listener-connection host="0.0.0.0" port="8081" />
     </http:listener-config>
-    <apikit:config name="servicerequest-sys-api-config" api="resource::5fe8096b-b5d7-4ef2-ac8f-caba6721adfe:servicerequest-sys-api:1.0.0:raml:zip:servicerequest-sys-api.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" raml="api\servicerequest-sys-api.raml"/>
+    <apikit:config name="servicerequest-sys-api-config" api="resource::5fe8096b-b5d7-4ef2-ac8f-caba6721adfe:servicerequest-sys-api:1.0.0:raml:zip:servicerequest-sys-api.raml" outboundHeadersMapName="outboundHeaders" httpStatusVarName="httpStatus" raml="api\servicerequest-sys-api.raml" />
     <flow name="servicerequest-sys-api-main">
         <http:listener config-ref="servicerequest-sys-api-httpListenerConfig" path="/api/*">
             <http:response statusCode="#[vars.httpStatus default 200]">
