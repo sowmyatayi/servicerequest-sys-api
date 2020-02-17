@@ -107,12 +107,12 @@
          <url>https://maven.anypoint.mulesoft.com/api/v2/organizations/5fe8096b-b5d7-4ef2-ac8f-caba6721adfe/maven</url>
          <layout>default</layout>
       </repository> -->
-      <repository>
+     <!--  <repository>
          <id>anypoint-exchange-v2</id>
          <name>Anypoint Exchange</name>
          <url>https://maven.anypoint.mulesoft.com/api/v2/maven</url>
          <layout>default</layout>
-      </repository>
+      </repository> -->
       <repository>
          <id>mulesoft-releases</id>
          <name>MuleSoft Releases Repository</name>
